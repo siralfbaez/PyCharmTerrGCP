@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<title>
+    Request
+</title>
+<body>
+<h3>Request</h3>
+<form action="{{action}}" method="post">
+<textarea name="request" rows="20" cols="30">{{request_sent}}</textarea>
+<input type="hidden" name="token" value={{token}}>
+<div>
+    <input type="submit">
+</div>
+</form>
+<h3>Response</h3>
+<pre id="response">
+{{response}}
+</pre>
+</body>
